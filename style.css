@@ -216,3 +216,68 @@ body {
   background-color: #f44336;
   color: #fff;
 }
+
+/* Services Section */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-10px) !important;
+}
+
+.icon-wrapper {
+  background-color: #e0f7fa;
+  color: #29b6f6;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2em;
+  margin: 0 auto 20px;
+}
+
+.service-item h3 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #263238;
+  font-weight: 600;
+}
+
+.service-item p {
+  color: #546e7a;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.read-more i {
+  margin-right: 8px;
+}
+
+.read-more:hover {
+  color: #0d47a1;
+  transform: translateX(5px);
+}

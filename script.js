@@ -56,4 +56,14 @@ document.addEventListener("DOMContentLoaded", function () {
     reset: false,
     viewFactor: 0.2,
   });
+
+  ScrollReveal().reveal(".services-grid .service-item", {
+    origin: "bottom",
+    distance: "40px",
+    duration: 700,
+    easing: "ease-out",
+    delay: (index) => index * 200,
+    reset: false,
+    viewFactor: 0.2,
+  });
 });
