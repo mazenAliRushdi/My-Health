@@ -13,7 +13,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .section-padding {
@@ -144,7 +144,7 @@ body {
 .redesigned-hero {
   background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
   color: #263238;
-  padding: 120px 0;
+  padding: 70px 0;
 }
 
 .redesigned-hero .container {
@@ -685,7 +685,7 @@ body {
 .footer {
   background-color: #00bcd4;
   color: #fff;
-  padding: 40px 0;
+  padding: 25px 0;
   font-size: 0.9em;
   text-align: center;
 }
