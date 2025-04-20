@@ -680,3 +680,241 @@ body {
     text-align: center;
   }
 }
+
+/* Footer */
+.footer {
+  background-color: #00bcd4;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links ul li {
+  margin-left: 20px;
+}
+
+.footer-links ul li:last-child {
+  margin-left: 0;
+}
+
+.footer-links ul li a {
+  color: #e0f7fa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer p {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 992px) {
+  .redesigned-hero .container,
+  .about .container,
+  .contact .container {
+    grid-template-columns: 1fr;
+  }
+
+  .redesigned-hero .hero-content,
+  .redesigned-hero .hero-image,
+  .about-content,
+  .about-image,
+  .contact-info,
+  .contact-form {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons a {
+    margin-left: 0;
+    margin-bottom: 15px;
+    width: 80%;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .about .container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    margin-bottom: 40px;
+  }
+
+  .contact .container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info {
+    margin-top: 40px;
+  }
+
+  .redesigned-hero .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .redesigned-hero .hero-content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .redesigned-hero .hero-title {
+    font-size: 2.6em;
+  }
+
+  .redesigned-hero .hero-subtitle {
+    font-size: 1.3em;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+  }
+
+  .main-nav.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 99;
+  }
+
+  .main-nav.open ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav.open ul li {
+    margin: 15px 0;
+  }
+
+  .main-nav.open ul li a {
+    padding: 12px 20px;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.4em;
+    margin-bottom: 40px;
+  }
+
+  .redesigned-hero {
+    padding: 100px 0;
+  }
+
+  .redesigned-hero .hero-title {
+    font-size: 2.8em;
+  }
+
+  .redesigned-hero .hero-subtitle {
+    font-size: 1.4em;
+  }
+
+  .services-grid,
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-nav.open {
+    top: 80px;
+  }
+}
