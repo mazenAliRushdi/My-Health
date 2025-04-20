@@ -66,4 +66,30 @@ document.addEventListener("DOMContentLoaded", function () {
     reset: false,
     viewFactor: 0.2,
   });
+
+  ScrollReveal().reveal(".about-image", {
+    origin: "left",
+    distance: "60px",
+    duration: 800,
+    easing: "ease-out",
+    reset: false,
+    viewFactor: 0.2,
+  });
+  ScrollReveal().reveal(".about-content", {
+    origin: "right",
+    distance: "60px",
+    duration: 800,
+    easing: "ease-out",
+    reset: false,
+    viewFactor: 0.2,
+  });
+  ScrollReveal().reveal(".about-values li", {
+    origin: "bottom",
+    distance: "20px",
+    duration: 700,
+    easing: "ease-out",
+    delay: (index) => index * 150 + 500,
+    reset: false,
+    viewFactor: 0.2,
+  });
 });
