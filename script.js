@@ -92,4 +92,53 @@ document.addEventListener("DOMContentLoaded", function () {
     reset: false,
     viewFactor: 0.2,
   });
+
+  ScrollReveal().reveal(".doctors-grid .doctor-card", {
+    origin: "bottom",
+    distance: "40px",
+    duration: 700,
+    easing: "ease-out",
+    delay: (index) => index * 200,
+    reset: false,
+    viewFactor: 0.2,
+  });
+  ScrollReveal().reveal(".doctors-cta", {
+    scale: 0.9,
+    duration: 700,
+    easing: "ease-out",
+    delay: 300,
+    reset: false,
+    viewFactor: 0.2,
+  });
+
+  ScrollReveal().reveal(".contact-form", {
+    origin: "left",
+    distance: "60px",
+    duration: 800,
+    easing: "ease-out",
+    reset: false,
+    viewFactor: 0.2,
+  });
+  ScrollReveal().reveal(".contact-info", {
+    origin: "right",
+    distance: "60px",
+    duration: 800,
+    easing: "ease-out",
+    reset: false,
+    viewFactor: 0.2,
+  });
+
+  const doctorSocialIcons = document.querySelectorAll(
+    ".doctor-social .social-icon"
+  );
+  doctorSocialIcons.forEach((icon) => {
+    icon.addEventListener("mouseenter", function () {
+      this.style.transform = "rotate(360deg) scale(1.2)";
+      this.style.transition = "transform 0.4s ease-in-out";
+    });
+    icon.addEventListener("mouseleave", function () {
+      this.style.transform = "rotate(0deg) scale(1)";
+      this.style.transition = "transform 0.3s ease-in-out";
+    });
+  });
 });
