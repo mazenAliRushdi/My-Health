@@ -128,6 +128,23 @@ document.addEventListener("DOMContentLoaded", function () {
     viewFactor: 0.2,
   });
 
+  ScrollReveal().reveal(".contact-form", {
+    origin: "left",
+    distance: "60px",
+    duration: 800,
+    easing: "ease-out",
+    reset: false,
+    viewFactor: 0.2,
+  });
+  ScrollReveal().reveal(".contact-info", {
+    origin: "right",
+    distance: "60px",
+    duration: 800,
+    easing: "ease-out",
+    reset: false,
+    viewFactor: 0.2,
+  });
+
   const doctorSocialIcons = document.querySelectorAll(
     ".doctor-social .social-icon"
   );
