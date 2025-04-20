@@ -32,4 +32,28 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  ScrollReveal().reveal(".redesigned-hero .hero-content", {
+    origin: "bottom",
+    distance: "50px",
+    duration: 700,
+    delay: 300,
+    easing: "ease-out",
+    reset: false,
+  });
+  ScrollReveal().reveal(".redesigned-hero .hero-image", {
+    origin: "top",
+    distance: "50px",
+    duration: 700,
+    delay: 500,
+    easing: "ease-out",
+    reset: false,
+  });
+
+  ScrollReveal().reveal(".section-title", {
+    duration: 600,
+    easing: "ease-out",
+    reset: false,
+    viewFactor: 0.2,
+  });
 });

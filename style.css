@@ -139,3 +139,80 @@ body {
 .mobile-toggle.open span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
+/* Hero Section */
+.redesigned-hero {
+  background: linear-gradient(to bottom right, #e3f2fd, #bbdefb);
+  color: #263238;
+  padding: 120px 0;
+}
+
+.redesigned-hero .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.redesigned-hero .hero-content {
+  flex: 1;
+  padding: 20px;
+  text-align: right;
+}
+
+.redesigned-hero .hero-title {
+  font-size: 3.2em;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #1565c0;
+}
+
+.redesigned-hero .hero-subtitle {
+  font-size: 1.6em;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #455a64;
+}
+
+.hero-buttons a {
+  margin-left: 15px;
+}
+
+.hero-buttons a:last-child {
+  margin-left: 0;
+}
+
+.redesigned-hero .hero-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.redesigned-hero .hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.primary-button {
+  background-color: #4db6ac;
+  color: #fff;
+}
+
+.secondary-button {
+  background-color: #f44336;
+  color: #fff;
+}
